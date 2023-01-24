@@ -1,0 +1,124 @@
+\documentclass[11pt,a4paper,sans,color,final]{moderncv}
+\moderncvtheme[red]{classic}
+%%
+\renewcommand*{\cventry}[7][.25em]{%
+  \cvitem[#1]{#2}{%
+    {\bfseries#3}%
+   \ifthenelse{\equal{#4}{}}{}{, {\slshape#4}}%
+    \ifthenelse{\equal{#5}{}}{}{#5}%removes comma following institution in cventry
+    \ifthenelse{\equal{#6}{}}{}{#6}%removes comma following city in cventry
+    .\strut%
+    \ifx&#7&%
+      \else{\newline{}\begin{minipage}[t]{\linewidth}\small#7\end{minipage}}\fi}}
+%%%
+\usepackage[utf8]{inputenc}
+\usepackage[scale=0.80]{geometry}
+\recomputelengths
+\setlength{\hintscolumnwidth}{2.3cm} % if you want to change the width of the column with the dates
+%\setlength{\makecvtitlenamewidth}{10cm} % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+% personal information
+\firstname{Gabrielle}
+\familyname{Magalhães}
+\address{610 Commonwealth Ave}{Boston, MA}
+\mobile{(313)676-2890}
+\email{gabrie@bu.edu}
+\homepage{magalhaesneuro.rbind.io}
+\social[social]{@magalhaesneuro}
+\social[github]{witchofizalith}
+%
+\begin{document}
+\makecvtitle
+%
+\section{Education}
+    \cventry{2022 - }{Doctoral Student}{Boston University}{}{\textit{}}{Incoming Fall 2022.}
+    \cventry{2017 - 2021}{Bachelors of the Arts in Psychology}{The University of Texas at San Antonio}{}{\textit{}}{With Honors, 3.72/4.00.}  % arguments 3 to 6 can be left empty
+
+\section{Research Experience}
+    \cventry{01/22 - 08/22}{Research Technician}{Meyer Lab,}{ Boston University}{}{Research the development of ventral hippocampal projections
+    to the prefrontal cortex and its role in facilitating learning to distinguish between fear and safety. Detailed Responsbilities:%}
+    \begin{itemize}
+        \item Process brain tissue for ex-vivo analysis through transcardial perfusions, brain extraction, immunohistochemical staining, and imaging.
+        \item Manage laboratory supply, equipment, and behavioral paradigms used within various lines of research.
+        \item Supervise and mentor undergraduates on laboratory research techniques. 
+    \end{itemize}} 
+    \cventry{04/21 - 12/21}{Research Assistant}{Burgos Lab,}{ University of Texas at San Antonio}{}{Researched the role of ventral hippocampal projections
+    to the prefrontal cortex in threat learning \& active avoidance. Detailed Responsibilities: %}
+    \begin{itemize}
+        \item Process brain tissue for ex-vivo analysis through transcardial perfusions,
+        brain extraction, mounting, \& imaging.
+        \item Perform stereotaxic surgeries injecting DREADDs or optogenetic viral vectors or
+        implantation of optical fiber implants.
+        \item Run behavioral paradigms assessing active avoidance learning using a novel dynamic platform avoidance task \& other avoidance 
+        and stress paradigms.
+        \item Supervise and mentor undergraduates on laboratory research techniques.
+    \end{itemize}}
+    \cventry{10/19 - 05/21}{Undergraduate Research Assistant}{Swan Lab,}{ University of Texas at San Antonio}{}{Computationally modeled the
+    development of Post-Traumatic Stress Disorder using human patient symptom data. Detailed Responsibilities: %} 
+    \begin{itemize}
+        \item Computionally modeled the contribution of mental health comorbidities and self-perception of community integration to overall PTSD symptom severity.
+        \item Managed the storage of collected behavioral data from human participants and executed subsequent analysis of collected data.
+        \item Administered cognitive and behavioral assessments to human research partipants and conducted in-depth structured interviews regarding prior
+        head injury or history of anxiety.
+    \end{itemize}}
+
+%\publications
+    %\nocite{*}
+    %\bibliographystyle{plain}
+    %\bibliography{nameofbiblographyfilegoeshere.bib}
+
+\section{Posters}
+    \cventry{[1]}{Magalhães, G.\textnormal{, Burnell, H., Subedi, S., Jabri, S., Ganiyu, O., \& Meyer, H. C. (2022)}}{"Sex differences in safety learning are present in 
+    adults but not adolescents”}{ Poster presented at Pavlovian Society Annual Meeting 2022, Milwaukee, WI.,}{ 1 October 2022}{}{}
+    \cventry{[2]}{Magalhães, G.*\textnormal{, Garza, M. C.*, Felix-Ortiz, A.C., Diehl, M. M., \& Burgos-Robles, A. (2021)}}{"Active avoidance learning during a dynamic platform avoidance task 
+    requires processing in the medial prefrontal cortex and ventral hippocampal inputs.”}{ Poster presented at Pavlovian Society Annual Meeting 2021, Ann Arbor, MI.,}{ 1 October 2021}{}{}
+    \cventry{[3]}{\textnormal{Garza, M.C.,*} Magalhães, G.*\textnormal{, Felix-Ortiz, A.C., Wood, R. M., Hajali, D. T., Arriaga, D.T., Msengi, H.D., Diehl, 
+    M. M., \& Burgos-Robles, A. (2021)}}{"New insights on the role of distinct prefrontal cortical divisions using a 
+    novel task for active avoidance learning that involves a dynamic option for safety (P660.11)."}{ Virtual Poster Presented at Society for Neuroscience 2021,}{ 8 November 2021}{}
+    \cventry{[4]}{Magalhães, G.\textnormal{, Swan, A. A., \& Pugh, M. J.}}{"Reintegration partially mediates the relationship 
+    between problematic sleep and post-traumatic stress disorder symptom severity in post-9/11 veterans”}{ Talk given at Seventh Annual SAMHS and Universities Research Forum (SURF 2021), San Antonio, TX.,}{ 10 June 2021}{}{}
+    \cventry{[5]}{Magalhães, G.\textnormal{, Swan, A. A., \& Pugh, M. J.}}{"The combined influence of post-traumatic stress disorder 
+    and depression on somatization among post-9/11 veterans”}{ Virtual poster presented at SACNAS 2020,}{ 19 October 2020}{}{}
+    \cventry{}{\textnormal{*Denotes co-authorship}}{}{}{}{}
+
+\section{Scholarships, Awards, \& Grants}
+    \cventry{09/22}{Emerging Scholar Fellowship Award}{Boston University}{}{}{Award for incoming students of underrepresented backgrounds transitioning to graduate school.}
+    \cventry{10/21}{Trainee Professional Development Award}{Society for Neuroscience}{}{}{Travel award for undergraduate and graduate students who demonstrate scientific merit and excellence in research.}
+    \cventry{04/21}{Nomination for University Student Life Awards}{UTSA}{}{}{Nominated for awards recognizing undergraduate students who crafted powerful academic legacies at UTSA.}
+    \cventry{12/20}{Experiential Learning Fair Award in Professional Development}{UTSA}{}{}{Award recognizing exemplary professional development in conducting undergraduate research and pursuing a career in neuroscience research.}
+    \cventry{09/20 - 12/20}{Provost's Undergraduate Research Fellowship}{UTSA}{}{}{Funded research fellowship position for Fall 2020 awarded to outstanding undergraduates performing independent, original research.}
+    \cventry{09/20}{Travel Award SACNAS 2020}{SACNAS}{}{}{Travel award for undergraduate to present research at SACNAS 2020.}
+    \cventry{05/20 - 05/21}{MARC-U*STAR Fellowship}{National Institutes of Health}{}{}{Competitive scholarship awarded to 12 honors students at UTSA of underrepresented backgrounds actively conducting STEM research.}
+    \cvitemwithcomment{2020 - 2021}{President's List}{}
+    \cvitemwithcomment{2019}{Dean's List}{}
+
+\section{Research Skills}
+    \cvdoubleitem{Animal Use}{C57 Mice (adolescent \& adult), mouse handling, colony management.}{Behavior}{Platform avoidance, elevated plus maze, open field test, fear conditioning.}
+    \cvdoubleitem{Microscopy}{Fiber photometry (novice).}{Optogenetics}{Optical ferrule construction, optical plug-in, and acute \& chronic laser light stimulation.}
+    \cvdoubleitem{Stereotaxic Surgery}{Viral construct injection, optical fiber implantation, and DREADDs injections.}{Histology}{Transcardial perfusion, tissue slicing \& staining, tissue mounting.}
+    \cvdoubleitem{Programming}{Python (Intermediate), R (Intermediate), LaTeX (Intermediate).}{Statistical Programs}{IBM SPSS (Proficient), GraphPad Prism (Proficient).}
+    \cvdoubleitem{Software}{DeepLab Cut (Novice), Ethovision (Novice), ANY-Maze (Proficient).}{}{}
+
+\section{Service}
+    \subsection*{Professional}
+        \cvitem{06/22 - 08/22}{Mentor for RISE (Research in Science \& Engineering Program) summer intern at BU.}
+        \cvitem{06/22 - 08/22}{Mentor for GROW (Greater Boston Research Opportunities for Young Women) at BU.}
+        \cvitem{10/19 - 05/21}{Vice President of Psi Chi Honor Society in Psychology chapter at UTSA.}
+        \cvitemwithcomment{04/21}{Interviewer for UTSA ESTEEMED Scholars Program Fall 2021 Admissions Cycle.}{}
+        \cvitem{04/21}{Presenter for BraiNY Bunch Neuroscience Monthly Journal Club.}
+        \cvitem{09/20}{Reviewer for UTSA MARC/RISE Fall Poster Session.}
+        \cvitem{06/20}{Reviewer for UTSA MARC/RISE Summer Poster Session.}
+    \subsection*{Community}
+        \cvitem{10/22}{Mentor for Girl's Science Club, an after-school program for educating girls of underrepresented backgrounds in the sciences.}
+        \cvitem{09/22 - 06/22}{Letter Writer for Letters to a Prescientist pen-pal program.}
+        \cvitem{03/22}{Science Fair Judge for biology and psychology projects presented at either the Middle School \& High School Divisions of the 76th Boston Public Schools Science Fair.}
+        \cvitem{12/20}{Science Fair Judge for biology and psychology projects presented at John Jay Science and Engineering Academy of San Antonio.}
+        \cvitem{06/20 - 08/20}{Volunteer and Interviewer for Prospera Housing Community Services.}
+        \cvitem{08/18 - 12/18}{Volunteer and Curator for Institute of Texan Cultures to design and curate exhibit discussing the history of Foster Care.}
+
+\section{References}
+    \cvitemwithcomment{PI}{Dr. Heidi Meyer, Assistant Professor at Boston University.}{hcmeyer@bu.edu}
+    \cvitemwithcomment{Former PI}{Dr. Anthony Burgos-Robles, Assistant Professor at UT San Antonio.}{anthony.burgos-robles@utsa.edu}
+    \cvitemwithcomment{Former PI}{Dr. Alicia Swan, Assistant Professor at UT San Antonio.}{alicia.swan@utsa.edu}
+
+    \end{document}
