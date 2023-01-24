@@ -1,2 +1,2 @@
 # gabriellecv
-# CV created in LaTeX using moderncv class. Update as needed.
+CV created in LaTeX using moderncv class. Update as needed.
